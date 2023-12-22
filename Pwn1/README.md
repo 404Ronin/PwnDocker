@@ -1,25 +1,44 @@
-Privilege escalation en utilisant un docker dont les droit on mal été configurés.
-Nous pouvons trouver sur internet des moyens de changer les droits de docker afin de l'utiliser sans la commande root.
-Juste en utilisant la commande "docker build" ce qui n'est pas normal et pas recommander.
-Le but de ce TP est donc de montrer que nous pouvons avoir accès à la machine entière à cause de ce genre de configuration "pratique": https://julienc.io/blog/utiliser_le_client_docker_sans_etre_root
-Sur ce blog par exemple l'auteur prétend que le fait d'utiliser la commande sudo est une mauvaise pratique et que ça permetterait de créer des brèches sécurités dans le système.
-Nous allons donc montrer ici que cette méthode permet de prendre le controle total de la machine en super utilisateur.
+### Escalade de Privilèges avec Docker
+Ce tutoriel démontre comment une configuration incorrecte des droits Docker peut mener à une escalade de privilèges.
 
-Tout d'abord nous allons suivre son tutoriel afin de rendre docker utilisable par un groupe docker et non plus un sudoer.
+## Contexte
+Des méthodes sont disponibles sur Internet pour changer les droits de Docker, permettant son utilisation sans la commande root. Utiliser simplement la commande docker build peut être considéré comme anormal et non recommandé. L'objectif de ce TP est de montrer qu'une telle configuration "pratique" peut donner un accès complet à la machine.
 
-Super! Nous avons donc maintenant accès à docker sans passer par sudo!
-Image
+## Référence
+Un exemple de cette pratique est discuté sur ce blog de Julien, où l'auteur suggère que l'utilisation de sudo avec Docker peut créer des failles de sécurité.
 
-Maintenant nous allons rentrer dans le vif du sujet:
-Nous allons en premier lieu localiser le socket de docker et observer ses droits:
-image
-Nous pouvons donc voir que les droit sont accordé au groupe docker.
+## Procédure
+Configuration de Docker sans sudo
+Suivez d'abord ce tutoriel pour rendre Docker accessible à un groupe docker plutôt qu'aux seuls sudoers.
 
-Maintenant que nous savons ça, nous savons que docker est exploitable.
-Nous allons donc lister les image présentes sur docker avec la commande: "docker images"
-Nous allons en prendre une disponible et l'utiliser pour obtenir nos super droits d'utilisateurs.
-Nous allons utiliser une ligne de commande qui permet de demander un shell root depuis le conteneur.
-image
-Et voilà!
-Nous voilà donc root et avec des super droits utilisateur. et nous pouvons accéder au dosseir protégé.
-image
+bash
+Copy code
+# Instructions pour configurer Docker
+
+Identification et Exploitation du Socket Docker
+Localisation et observation des droits du socket Docker :
+
+Exécutez la commande suivante pour localiser le socket Docker et observer ses droits.
+
+bash
+Copy code
+# Commande pour localiser le socket Docker
+
+Exploitation du socket Docker :
+
+Avec la connaissance des droits accordés, exploitez Docker pour obtenir des privilèges élevés.
+
+Liste des images Docker disponibles :
+
+bash
+Copy code
+docker images
+Utilisation d'une image Docker pour obtenir un shell root :
+
+bash
+Copy code
+# Commande pour obtenir un shell root
+
+
+Conclusion
+Ce tutoriel démontre comment une configuration inappropriée de Docker peut mener à une escalade de privilèges, donnant un accès total à la machine.
