@@ -1,4 +1,4 @@
-### Escalade de Privilèges avec Docker
+# Escalade de Privilèges avec Docker
 Ce tutoriel démontre comment une configuration incorrecte des droits Docker peut mener à une escalade de privilèges.
 
 ## Contexte
@@ -13,7 +13,7 @@ Suivez d'abord ce tutoriel pour rendre Docker accessible à un groupe docker plu
 
 bash
 Copy code
-# Instructions pour configurer Docker
+### Instructions pour configurer Docker
 
 Identification et Exploitation du Socket Docker
 Localisation et observation des droits du socket Docker :
@@ -22,7 +22,7 @@ Exécutez la commande suivante pour localiser le socket Docker et observer ses d
 
 bash
 Copy code
-# Commande pour localiser le socket Docker
+### Commande pour localiser le socket Docker
 
 Exploitation du socket Docker :
 
@@ -37,8 +37,7 @@ Utilisation d'une image Docker pour obtenir un shell root :
 
 bash
 Copy code
-# Commande pour obtenir un shell root
+### Commande pour obtenir un shell root
 
 
-Conclusion
-Ce tutoriel démontre comment une configuration inappropriée de Docker peut mener à une escalade de privilèges, donnant un accès total à la machine.
+
