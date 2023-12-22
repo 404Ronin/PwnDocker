@@ -12,7 +12,7 @@ Suivez d'abord ce tutoriel pour rendre Docker accessible à un groupe docker plu
 https://julienc.io/blog/utiliser_le_client_docker_sans_etre_root
 
 
-### Ildentification
+### Identification
 
 Identification et Exploitation du Socket Docker
 Localisation et observation des droits du socket Docker :
