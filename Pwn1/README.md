@@ -7,12 +7,11 @@ Des méthodes sont disponibles sur Internet pour changer les droits de Docker, p
 ## Référence
 Un exemple de cette pratique est discuté sur ce blog de Julien, où l'auteur suggère que l'utilisation de sudo avec Docker peut créer des failles de sécurité.
 
-## Procédure
 Configuration de Docker sans sudo
 Suivez d'abord ce tutoriel pour rendre Docker accessible à un groupe docker plutôt qu'aux seuls sudoers.
+https://julienc.io/blog/utiliser_le_client_docker_sans_etre_root
 
-bash
-Copy code
+
 ### Instructions pour configurer Docker
 
 Identification et Exploitation du Socket Docker
