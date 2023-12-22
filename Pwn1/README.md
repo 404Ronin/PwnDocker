@@ -34,7 +34,7 @@ Listez des images Docker disponibles, puis utilisez d'une image Docker pour obte
 
 Et voilà nous voilà maintenant root, et un dossier qui n'était pas disponible avec notre utilisateur, l'est désormais.
 
-![locate](Screens/Capture3.PNG)
 ![locate](Screens/Capture4.PNG)
+![locate](Screens/Capture3.PNG)
 
 
