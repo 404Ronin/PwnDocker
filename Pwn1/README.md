@@ -14,7 +14,7 @@ https://julienc.io/blog/utiliser_le_client_docker_sans_etre_root
 
 ### Identification
 
-Identification et Exploitation du Socket Docker
+Identification et Exploitation du Socket Docker.
 Localisation et observation des droits du socket Docker :
 
 Exécutez la commande suivante pour localiser le socket Docker et observer ses droits.
