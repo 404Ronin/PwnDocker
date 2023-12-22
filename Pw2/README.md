@@ -34,8 +34,8 @@ networks:
       foo: "1"
       bar: "2"
 Résultat:
-1.Proxy(front-end): Accède seulement au réseau 'frontend'.
-2.App(Back-end); Accède aux réseaux 'frontend' et 'backend'.
+1. Proxy(front-end): Accède seulement au réseau 'frontend'.
+2. App(Back-end); Accède aux réseaux 'frontend' et 'backend'.
 3. DB (Base de données): isolée sur le réseau ('Backend')
 
 ## Scénario d'attaque
