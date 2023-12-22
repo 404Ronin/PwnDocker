@@ -11,6 +11,7 @@ Une faille de configuration réseau resterai que chacun ne puisse pas uniquement
 
 Voici un docker-compose.yml qui configurerait les services correctements:
 services:
+``` YAML
   proxy:
     build: ./proxy
     networks:
@@ -33,6 +34,7 @@ networks:
     driver_opts:
       foo: "1"
       bar: "2"
+```
 Résultat:
 1. Proxy(front-end): Accède seulement au réseau 'frontend'.
 2. App(Back-end); Accède aux réseaux 'frontend' et 'backend'.
