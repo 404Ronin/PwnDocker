@@ -32,7 +32,8 @@ Listez des images Docker disponibles, puis utilisez d'une image Docker pour obte
 
 ### Démonstration 
 
-Et voilà nous voilà maintenant root, et un dossier qui n'était pas disponible avec notre utilisateur, l'est désormais.
+Et voilà! Nous voilà maintenant root!
+Un dossier qui n'était pas disponible avec notre utilisateur, l'est désormais.
 
 ![locate](Screens/Capture4.PNG)
 ![locate](Screens/Capture3.PNG)
