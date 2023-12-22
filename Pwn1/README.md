@@ -20,22 +20,16 @@ Localisation et observation des droits du socket Docker :
 Exécutez la commande suivante pour localiser le socket Docker et observer ses droits.
 ![locate](Screens/Capture1.PNG)
 
-### Commande pour localiser le socket Docker
+### Commande pour localiser le socket Docker et obtenir un shell root
 
 Exploitation du socket Docker :
 
 Avec la connaissance des droits accordés, exploitez Docker pour obtenir des privilèges élevés.
 
-Liste des images Docker disponibles :
+Listez des images Docker disponibles, puis utilisez d'une image Docker pour obtenir un shell root :
 
-bash
-Copy code
-docker images
-Utilisation d'une image Docker pour obtenir un shell root :
+![locate](Screens/Capture2.PNG)
 
-bash
-Copy code
-### Commande pour obtenir un shell root
 
 
 
