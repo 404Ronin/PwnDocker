@@ -18,9 +18,8 @@ Identification et Exploitation du Socket Docker
 Localisation et observation des droits du socket Docker :
 
 Exécutez la commande suivante pour localiser le socket Docker et observer ses droits.
+![locate](/Screens/capture1.PNG)
 
-bash
-Copy code
 ### Commande pour localiser le socket Docker
 
 Exploitation du socket Docker :
